@@ -1,0 +1,9 @@
+{
+    "name": "libops/isle",
+    "type": "drupal-theme",
+    "description": "Bootstrap theme for Islandora",
+    "require": {
+        "drupal/bootstrap_barrio": "^5.5"
+    }
+}
+
