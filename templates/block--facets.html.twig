@@ -47,6 +47,7 @@
     set classes = classes | merge(['facet-inactive'])
   %}
 {% endif %}
+{% if content[0]['#items'] is defined %}
 <div class="accordion-item">
   <h2 class="accordion-header m-0 p-0">
     <button class="accordion-button{{ expanded ? '' : ' collapsed' }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ plugin_id | clean_class }}" aria-expanded="{{ expanded ? "true" : "false" }}" aria-controls="{{ plugin_id | clean_class }}">
@@ -59,3 +60,5 @@
     </div>
   </div>
 </div>
+{% endif %}
+
